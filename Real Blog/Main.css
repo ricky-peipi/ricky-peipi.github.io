@@ -125,8 +125,15 @@ a:active {
 
 #p10 {
     font-size: 13pt;
+    margin-top: 70px;
 }
 #p11 {
+    font-size: 13pt;
+    text-align: left;
+    margin-top: 70px;
+}
+
+#p12 {
     font-size: 13pt;
     text-align: left;
 }
