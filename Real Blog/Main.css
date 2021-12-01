@@ -85,7 +85,11 @@ a:active {
     font-weight: 900;
     margin-top: 70px;
 }
-
+#h11 {
+    font-size: 16pt;
+    font-weight: 900;
+    margin-top: 70px;
+}
 #p1 {
     font-size: 13pt;
 }
@@ -120,6 +124,9 @@ a:active {
 }
 
 #p10 {
+    font-size: 13pt;
+}
+#p11 {
     font-size: 13pt;
 }
 #pic1 {
