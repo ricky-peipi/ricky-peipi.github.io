@@ -1,0 +1,63 @@
+html, body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: flex-center;
+  flex-direction: column;
+  background-color:lightgray;
+}
+
+#message, #notes {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#message {
+  font-size: 3.5rem;
+  color:crimson;
+}
+
+.board {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: darkgrey;
+}
+
+.board div {
+  color: green;
+  font-size: 2rem;
+  width: 75px;
+  height: 75px;
+  border: 1px #ccc dotted;
+  border-radius: 10%;
+  background-color:lightgray;
+  margin: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.board div:hover {
+  background-color:lightgray;
+}
+
+div.mine, div.mine:hover {
+  background: no-repeat center/60% url("images/Collide.png")red;
+}
+
+div.hidden {
+  background: #eee;
+}
+
+div.hidden:hover {
+  background: #ccc;
+}
+
+div.marked, div.marked:hover {
+  background: no-repeat center/60% url("images/Face.png") deepskyblue;
+}
