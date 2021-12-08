@@ -19,7 +19,7 @@ var board = {
   let random_boolean = () => Math.random() < 0.3;
   
   
-  var board = createBoard(5, 5);
+  var board = createBoard(4, 4);
   
   
   function createBoard(rows, cols) {
@@ -59,22 +59,17 @@ function startGame () {
 // 1. Are all of the cells that are NOT mines visible?
 // 2. Are all of the mines marked?
 function checkForWin () {
-const hasNoMine = board.cells.filter(cell => cell.isMine !== true)
+  for (let i = 0; i < board.cells.length; i++) {
 
-for (let i = 0; i < board.cells.length; i++) {
-  if (board.cells[i].isMine == true) {
-    if (board.cells[i].isMarked == true) {
-      for (let j = 0; j < hasNoMine.length; j++) {
-        if (hasNoMine[j].hidden == true) {
-          return
-        }
-      }
+    if (board.cells[i].isMine == true && board.cells[i].isMarked == true) {
+    }
+    else if (board.cells[i].isMine == false && board.cells[i].hidden == false) {
     }
     else {
       return;
     }
+
   }
-}
   // You can use this function call to declare a winner (once you've
   // detected that they've won, that is!)
   // return lib.displayMessage('You win!')
